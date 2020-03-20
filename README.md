@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/Mycl95/svelte-draft-loader.svg?branch=master)](https://travis-ci.org/Mycl95/svelte-draft-loader)
 
+<strong>⚠️ This loader is not published yet!</strong>
+
 <h1 align="center">svelte-draft-loader</h1>
 
 A [webpack](https://github.com/webpack) loader for [svelte-draft](https://github.com/mistlog/svelte-draft).
