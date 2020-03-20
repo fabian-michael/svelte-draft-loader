@@ -23,20 +23,33 @@ Add it before the svelte configuration.
 
 ```javascript
 module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.tsx$/,
-        use: 'svelte-draft-loader'
-      },
-      {
-        test: /\.svelte$/,
-        use: 'svelte-loader',
-        // svelte config see ...
-      }
-    ]
-  }
+    module: {
+        rules: [
+            {
+                test: /\.ts$/,
+                use: 'svelte-draft-loader'
+            },
+            {
+                test: /\.tsx$/,
+                use: [
+                    {
+                        loader: 'svelte-loader',
+                        options: {
+                            emitCss: true,
+                            hotReload: true
+                        }
+                    },
+                    'svelte-draft-loader'
+                ]
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    prod ? MiniCssExtractPlugin.loader : 'style-loader',
+                    'css-loader'
+                ]
+            }
+        ]
+    },
 }
 ```
-
-Please see https://github.com/sveltejs/svelte-loader for svelte-loader configuration.
