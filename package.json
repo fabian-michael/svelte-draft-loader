@@ -2,7 +2,7 @@
   "name": "svelte-draft-loader",
   "version": "0.1.0",
   "description": "A webpack loader for svelte-draft",
-  "main": "src/index.ts",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/Mycl95/svelte-draft-loader/issues"
   },
-  "homepage": "https://github.com/Mycl95/svelte-draft-loader#readme"
+  "homepage": "https://github.com/Mycl95/svelte-draft-loader#readme",
+  "dependencies": {
+    "loader-utils": "^2.0.0",
+    "schema-utils": "^2.6.5",
+    "svelte-draft": "^0.1.5"
+  },
+  "devDependencies": {}
 }
