@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/Mycl95/svelte-draft-loader.svg?branch=master)](https://travis-ci.org/Mycl95/svelte-draft-loader)
-
 <strong>⚠️ This loader is not published yet!</strong>
 
 <h1 align="center">svelte-draft-loader</h1>
