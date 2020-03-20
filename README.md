@@ -1,5 +1,3 @@
-<strong>⚠️ This loader is not published yet!</strong>
-
 <h1 align="center">svelte-draft-loader</h1>
 
 A [webpack](https://github.com/webpack) loader for [svelte-draft](https://github.com/mistlog/svelte-draft).
@@ -14,7 +12,7 @@ OR
 yarn add --dev svelte-draft-loader
 ```
 
-<h2 align="center">Usage</h2>
+<h2 align="center">Example Usage</h2>
 
 <strong>webpack.config.js</strong>
 
@@ -24,7 +22,6 @@ module.exports = {
     
     module: {
         rules: [
-            
             {
                 test: /\.tsx$/,
                 use: [
