@@ -24,7 +24,7 @@ module.exports = {
         rules: [
             {
                 test: /\.ts$/,
-                use: 'svelte-draft-loader'
+                use: 'ts-loader'
             },
             {
                 test: /\.tsx$/,
