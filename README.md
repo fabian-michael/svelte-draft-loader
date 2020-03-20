@@ -17,7 +17,6 @@ yarn add --dev svelte-draft-loader
 ```
 
 <h2 align="center">Usage</h2>
-Add it before the svelte configuration.
 
 <strong>webpack.config.js</strong>
 
