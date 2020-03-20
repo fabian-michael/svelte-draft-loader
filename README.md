@@ -1,4 +1,7 @@
 <h1 align="center">svelte-draft-loader</h1>
+
+A [webpack](https://github.com/webpack) loader for [svelte-draft](https://github.com/mistlog/svelte-draft).
+
 <h2 align="center">Install</h2>
 
 ```
@@ -19,6 +22,11 @@ module.exports = {
       {
         test: /\.tsx$/,
         use: [ 'svelte-draft-loader' ]
+      },
+      {
+        test: /\.svelte$/,
+        use: 'svelte-loader',
+        // svelte config ...
       }
     ]
   }
