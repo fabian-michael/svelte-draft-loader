@@ -17,8 +17,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.coffee$/,
-        use: [ 'coffee-loader' ]
+        test: /\.tsx$/,
+        use: [ 'svelte-draft-loader' ]
       }
     ]
   }
