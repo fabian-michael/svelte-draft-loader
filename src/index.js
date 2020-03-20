@@ -19,23 +19,17 @@ module.exports = async function(source, map, meta) {
     const ExistsAsync = promisify(exists);
     const id = this.resourcePath;
     let transformed = '';
+    let error = null;
 
-    // console.log(`id: ${id}`);
-
-    // it's typedraft or typescript file
-    if (id.endsWith('.js.tsx') || id.endsWith('.ts'))
-    {
-        transformed = await TranscribeTypeDraftAsync(id);
-    }
-    // it's svelte-draft
-    else if (id.endsWith('.tsx'))
-    {
+    try {
         transformed = await TranscribeSvelteDraftAsync(id);
         const css_path = id.replace('.tsx', '.css');
         if (await ExistsAsync(css_path))
-        {
             this.addDependency(path.resolve(css_path));
-        }
+    } catch (e) {
+        error = e
+    } finally {
+        callback(error, transformed, map, meta);
     }
-    callback(null, transformed, map, meta);
+
 }
