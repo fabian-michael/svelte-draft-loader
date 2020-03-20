@@ -3,6 +3,11 @@
 
 ```
 npm install --save-dev svelte-draft-loader
+
 OR
+
 yarn add --dev svelte-draft-loader
 ```
+
+<h2 align="center">Configuration</h2>
+<strong>webpack.config.js</strong>
