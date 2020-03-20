@@ -33,4 +33,4 @@ module.exports = {
 }
 ```
 
-Please see [https://github.com/sveltejs/svelte-loader] for svelte-loader configuration.
+Please see https://github.com/sveltejs/svelte-loader for svelte-loader configuration.
