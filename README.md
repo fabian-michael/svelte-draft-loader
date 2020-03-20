@@ -20,12 +20,11 @@ yarn add --dev svelte-draft-loader
 
 ```javascript
 module.exports = {
+    // ...
+    
     module: {
         rules: [
-            {
-                test: /\.ts$/,
-                use: 'ts-loader'
-            },
+            
             {
                 test: /\.tsx$/,
                 use: [
@@ -47,6 +46,8 @@ module.exports = {
                 ]
             }
         ]
-    },
+    }
+    
+    // ...
 }
 ```
