@@ -26,9 +26,11 @@ module.exports = {
       {
         test: /\.svelte$/,
         use: 'svelte-loader',
-        // svelte config see [https://github.com/sveltejs/svelte-loader]...
+        // svelte config see ...
       }
     ]
   }
 }
 ```
+
+Please see [https://github.com/sveltejs/svelte-loader] for svelte-loader configuration.
