@@ -11,3 +11,16 @@ yarn add --dev svelte-draft-loader
 
 <h2 align="center">Configuration</h2>
 <strong>webpack.config.js</strong>
+
+```javascript
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.coffee$/,
+        use: [ 'coffee-loader' ]
+      }
+    ]
+  }
+}
+```
