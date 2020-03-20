@@ -1,0 +1,26 @@
+{
+  "name": "svelte-draft-loader",
+  "version": "0.1.0",
+  "description": "A webpack loader for svelte-draft",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mycl95/svelte-draft-loader.git"
+  },
+  "keywords": [
+    "svelte",
+    "svelte-draft",
+    "webpack",
+    "typedraft",
+    "typescript"
+  ],
+  "author": "Fabian Michael",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mycl95/svelte-draft-loader/issues"
+  },
+  "homepage": "https://github.com/Mycl95/svelte-draft-loader#readme"
+}
